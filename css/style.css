@@ -51,6 +51,8 @@
     border-radius: 20px;
     text-align: justify;
     padding: 5px;
+    margin-left: 10px;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -74,8 +76,7 @@ input#banner_button_accept {
     background-color: red;
     border: 1.5px solid white;
 }
-#cookies_preferences {
-    visibility: hidden;
+#cookies_preferences { 
     position: fixed;
     left: 0;
     bottom: 0;
@@ -86,11 +87,22 @@ input#banner_button_accept {
     border-radius: 20px;
     text-align: justify;
     padding: 5px;
+    margin-left: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;                   
-}
-.visible-consent {
+} 
+.visible_consent {
     visibility: visible;
+}
+.hidden_consent {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 450px){
+    #banner_cookies, #cookies_preferences {
+        height: auto;
+        width: 200px;
+    }
 }

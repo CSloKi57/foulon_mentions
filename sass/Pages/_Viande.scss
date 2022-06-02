@@ -1,0 +1,41 @@
+#title-meal{
+    margin: 0;
+    padding-top: 80px;
+    text-align: center;
+    background-color: $BGcolor;
+    color: white;
+    font-size: 3rem;
+}
+
+#beef, #pork, #lamb{
+    background-color: $BGcolor;
+    color: white;
+    @include borderB;
+    @include paddingT-B;
+    h2{
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: 2rem;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+    p{
+        width: 90%;
+        margin: auto;
+        padding-top: 30px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 700px) {
+    #beef, #pork, #lamb{
+        img{
+            max-width: 80%;
+        }
+    }
+    #title-meal{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,8 @@
+@mixin borderB {
+    border-bottom: solid 1px white;
+}
+
+@mixin paddingT-B {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

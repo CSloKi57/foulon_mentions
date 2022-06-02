@@ -1,0 +1,226 @@
+.section-1{
+    #vitrine{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+    }
+    h1{
+        position: relative;
+        bottom: 400px;
+        margin: 0;
+        text-align: center;
+        color: white;
+        font-size: 3.5rem;
+        text-shadow: 8px 8px 5px $BGcolor;
+    }
+}
+
+.section-2{
+    background-color: $BGcolor;
+    margin-top: -200px;
+    display: flex;
+    justify-content: space-around;
+    @include paddingT-B;
+    @include borderB;
+    .article{
+        color: white;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        i{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 1.8rem;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            p{
+                font-size: 1.4rem;
+                font-weight: bold;
+                border: solid 2px white;
+                border-width: 80%;
+                &:hover{
+                    color: black;
+                    background-color: white;
+                    box-shadow: 0 0 4px white;
+                }
+            }
+        }
+    }
+}
+
+#delivery{
+    background-color: $BGcolor;
+    color: white;
+    @include paddingT-B;
+    text-align: center;
+    @include borderB;
+    i{
+         font-size: 4rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+    #phone{
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+}
+
+#about{
+    background-color: $BGcolor;
+    color: white;
+    @include paddingT-B;
+    text-align: center;
+    @include borderB;
+    i{
+         font-size: 4rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    #infos-bloc{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: justify;
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            margin-left: 30px;
+        }
+    }
+}
+
+#presentation{
+    background-color: $BGcolor;
+    color: white;
+    @include paddingT-B;
+    @include borderB;
+    img{
+        display: block;
+        margin: auto;
+        width: 85%;
+        margin-bottom: 50px;
+        box-shadow: 20px 20px rgb(192, 192, 192);
+    }
+    #description{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        article{
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            i{
+                margin-right: 30px;
+                font-size: 4rem;
+            }
+            span{
+                display: flex;
+                flex-direction: column;
+                h3{
+                    margin: 0;
+                    font-size: 2rem;
+                }
+                p{
+                    margin: 0;
+                    font-size: 1.2rem;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+#gallery{
+    background-color: $BGcolor;
+    color: white;
+    padding: 50px 30px;
+    @include borderB;
+    h2{
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+    }
+    h3{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .photo-gallery, a{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            margin: 2.5px;
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .section-1{
+        h1{
+            font-size: 2.5rem; 
+        }
+    }
+    .section-2{
+        margin-top: -150px;
+        flex-wrap: wrap;
+        article{
+            margin-bottom: 30px;
+        }
+    }
+    #delivery{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #infos-bloc{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 580px) {
+    .section-2{
+        margin-top: -240px;
+    }
+}
+
+@media (max-width: 450px) {
+    .section-1{
+        h1{
+            font-size: 1.9rem;
+        }
+    }
+    .section-2{
+        margin-top: -180px;
+    }
+}

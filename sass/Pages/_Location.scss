@@ -1,0 +1,60 @@
+#car-rent{
+    background-color: $BGcolor;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    @include borderB;
+    @include paddingT-B;
+    #car-infos{
+        padding: 20px;
+        font-size: 1.2rem;
+        #phone{
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+    }
+    img{
+        max-width: 40%;
+        min-width: 300px;
+    }
+}
+
+#roasting-rent{
+    background-color: $BGcolor;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include borderB;
+    @include paddingT-B;
+    #roasting-infos{
+        padding: 20px;
+        font-size: 1.2rem;
+        max-width: 600px;
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+    img{
+        max-width: 40%;
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    #car-rent{
+        padding-top: 10px;
+        img{
+            max-width: 70%;
+        }
+    }
+    #roasting-rent{
+       padding-top: 10px;
+        flex-wrap: wrap-reverse;
+        img{
+            max-width: 70%;
+        }
+    }
+}
